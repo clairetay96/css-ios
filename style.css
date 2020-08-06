@@ -1,0 +1,122 @@
+
+.screen {
+	width: 100%;
+	height: 1736px;
+	background-image: url("Wallpaper/Default.jpg");
+	background-size: cover;
+	position:relative;
+}
+
+.battery-icon {
+	width: 64px;
+	position: absolute;
+	height: 23px;
+	background-color: white;
+	right: 15px;
+	top: 4px;
+}
+
+
+.battery-icon1 {
+	width: 66px;
+	position: absolute;
+	right: 11px;
+	height: 25px;
+	border: 3px solid white;
+
+}
+
+header {
+	color: white;
+	font-family: arial;
+	font-size: 30px;
+	padding: 5px;
+}
+
+header::after {
+	content: "";
+	clear: both;
+	display:table;
+}
+
+header div {
+	width: calc((100% - 45px) / 3);
+	float: left;
+	margin: 5px;
+}
+
+.time {
+	text-align: center;
+}
+
+.battery  {
+	position: relative;
+	text-align: right;
+}
+
+.all-icons {
+	margin: 20px;
+
+}
+
+.all-icons::after, .footer-icons::after {
+	content: "";
+	clear: both;
+	display:table;
+}
+
+.icon {
+	float: left;
+	width: calc((100% - 144px) / 4);
+	margin: 2% 18px;
+}
+
+.icon-img {
+	width: 100%;
+	border-radius: 12px;
+}
+
+.icon p {
+	text-align: center;
+	font-family: arial;
+	color: white;
+	margin-top: 5%;
+}
+
+
+.footer-icons {
+	position: absolute;
+	bottom: 0;
+	padding: 10px;
+	margin-left: -20px;
+	background-color: rgba(255,255,255,0.5);
+
+}
+
+
+.hidden {
+	display: none;
+}
+
+@media (min-width:981px){
+
+	.screen {
+		width: 100%;
+		height: 950px;
+	}
+
+	.icon {
+		width: calc((100% - 216px) / 6);
+		margin: 4% 18px;
+		border-radius: 12px;
+	}
+
+	.hidden {
+		display: inline-block;
+	}
+
+	.hidden1 {
+		display: none;
+	}
+
+}
